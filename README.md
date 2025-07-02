@@ -5,7 +5,13 @@
 
 ```bash
 
-ruby test.rb
+ruby test_1.rb
+```
+
+## Run interactive
+
+```bash
+irb
 ```
 
 ## Run online
