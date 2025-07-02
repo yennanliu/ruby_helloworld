@@ -87,3 +87,114 @@ puts 9.to_f / 2 # 4.5
 
 
 
+
+s = 3
+
+puts 3.to_s + ' youuuuu'
+
+#----------------------
+
+nil # nil
+nil.class # NilClass
+
+nil.nil? # true
+42.nil? # false
+
+nil == nil # true
+false == nil # false
+
+#----------------------
+
+
+# 字串符號Symbols
+# Symbol是唯一且不會變動的識別名稱，用冒號開頭：
+
+# :this_is_a_symbol
+
+
+:this_is_a_symbol
+
+
+:apple
+:hello_world
+:_private_method
+:名字
+:"symbol with space"
+
+
+#----------------------
+
+person = {
+  name: "Alice",
+  age: 30,
+  city: "Taipei"
+}
+
+# 等同於：
+person = {
+  :name => "Alice",
+  :age => 30,
+  :city => "Taipei"
+}
+
+
+puts person
+
+
+fruits = {
+  apple: 5,
+  banana: 3
+}
+
+puts fruits[:apple]  # => 5
+
+
+#----------------------
+
+
+
+a = [ 1, "cat", 3.14 ]
+
+puts a[0] # 輸出 1
+puts a.size # 輸出 3
+
+a[2] = nil
+puts a.inspect # 輸出 [1, "cat", nil]
+a[99] # nil
+
+
+puts a[777]
+
+#----------------------
+
+
+
+colors = ["red", "blue"]
+
+colors.push("black")
+colors << "white"
+puts colors.join(", ") # red, blue, black, white
+
+colors.pop
+puts colors.last #black
+
+
+colors.pop
+puts colors.last #blue
+
+
+#----------------------
+
+languages = ['Ruby', 'Javascript', 'Perl']
+
+languages.each do |lang|
+  puts 'I love ' + lang + '!'
+end
+
+# I Love Ruby!
+# I Love Javascript!
+# I Love Perl!
+
+
+#----------------------
+
