@@ -198,3 +198,107 @@ end
 
 #----------------------
 
+# hash
+
+config = { :foo => 123, :bar => 456, :key => 999 }
+puts config[:foo] # 輸出 123
+config["nothing"] # 是 nil
+
+
+puts config[:key]
+
+# each
+config.each do |key, value|
+	puts "#{key} is #{value}"
+end
+
+#----------------------
+
+
+# flow controller
+
+
+puts 1 > 2 # 大於
+puts 1 < 2 # 小於
+puts 5 >= 5 # 大於等於
+puts 5 <= 4 # 小於等於
+puts 1 == 1 # 等於
+puts 2 != 1 # 不等於
+
+puts ( 2 > 1 ) && ( 2 > 3 ) # 和
+puts ( 2 > 1 ) || ( 2 > 3 ) # 或
+
+puts (1 > 0)
+puts (1 < 0)
+
+
+#----------------------
+
+# if else
+
+total = 26000
+
+if total > 100000
+  puts "large account"
+elsif total > 25000
+  puts "medium account"
+else
+  puts "small account"
+end
+
+
+#----------------------
+
+
+x=1
+y=2
+z=3
+
+puts (x > y) ? "bigger" : "smaller"
+
+
+
+#----------------------
+
+
+# case
+
+#name="zzzz"
+name="John"
+
+case name
+  when "John"
+    puts "Howdy John!"
+  when "Ryan"
+    puts "Whatz up Ryan!"
+  else
+    puts "Hi #{name}!"
+end
+
+
+#----------------------
+
+i=0
+while ( i < 10 )
+  i += 1
+  next if i % 2 == 0 #跳過雙數
+end
+
+
+#----------------------
+
+
+# loop
+
+i2 = 0
+
+loop do
+	i2 += 1
+	puts i2
+	break if i2 > 10
+end
+
+
+
+
+
