@@ -1,0 +1,5 @@
+# Progress
+
+# 20250703
+- https://guides.rubyonrails.org/getting_started.html#creating-a-new-rails-app
+	- 16.3. In Stock Email Notifications

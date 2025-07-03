@@ -20,6 +20,16 @@ irb
 - https://aws.amazon.com/tw/cloud9/
 
 
+## IDE
+
+Vim
+Emacs
+TextMate
+RubyMine
+VSCode
+
+
 ## Ref
 
 - https://ihower.tw/rails/ruby.html
+- https://github.com/edgecase/ruby_koans
