@@ -1,5 +1,9 @@
 # README
 
+## Endpoints
+
+- http://127.0.0.1:3000/products
+
 ## Init Ruby 3
 
 ```bash
