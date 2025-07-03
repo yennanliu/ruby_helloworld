@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Init Ruby 3
 
-Things you may want to cover:
+```bash
+# make sure use ruby 3
+eval "$(rbenv init -)"
 
-* Ruby version
+source ~/.zshrc 
+```
 
-* System dependencies
+## Run app
 
-* Configuration
+```bash
 
-* Database creation
+cd store
 
-* Database initialization
+bin/rails server
+```
 
-* How to run the test suite
+## Add new model
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
 
-* Deployment instructions
+bin/rails generate model Product name:string
+```
 
-* ...
+## Run DB migration
+
+```bash
+bin/rails db:migrate
+```
