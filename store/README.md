@@ -30,3 +30,10 @@ bin/rails generate model Product name:string
 ```bash
 bin/rails db:migrate
 ```
+
+
+## Ruby console
+
+```bash
+bin/rails console
+```
