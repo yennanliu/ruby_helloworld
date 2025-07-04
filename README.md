@@ -14,7 +14,7 @@ ruby test_1.rb
 irb
 ```
 
-## Run online
+## Run code online
 
 - https://onecompiler.com/ruby/43pftpcsz
 - https://aws.amazon.com/tw/cloud9/
@@ -22,14 +22,20 @@ irb
 
 ## IDE
 
-Vim
-Emacs
-TextMate
-RubyMine
-VSCode
+- Vim
+- Emacs
+- TextMate
+- RubyMine
+- VSCode
 
 
 ## Ref
 
-- https://ihower.tw/rails/ruby.html
-- https://github.com/edgecase/ruby_koans
+- Tutorial
+	- https://ihower.tw/rails/ruby.html
+	- https://github.com/edgecase/ruby_koans
+- gemfile
+	- https://bundler.io/v2.4/man/gemfile.5.html
+- Devise
+	- https://ihower.tw/rails/auth.html
+	- https://progressbar.tw/posts/172
