@@ -42,6 +42,16 @@ bin/rails db:migrate
 bin/rails console
 ```
 
+## Run Unit test
+
+```bash
+# run all UTs
+bin/rails test
+
+# run test with name
+bin/rails test test/models/product_test.rb
+```
+
 ## Other cmd
 
 ```bash
