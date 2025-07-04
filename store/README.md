@@ -35,9 +35,20 @@ bin/rails generate model Product name:string
 bin/rails db:migrate
 ```
 
-
 ## Ruby console
 
 ```bash
 bin/rails console
 ```
+
+## Other cmd
+
+```bash
+
+# generate a mailer with the following command:
+bin/rails g mailer Product in_stock
+```
+
+## Ref
+
+- https://guides.rubyonrails.org/getting_started.html#creating-the-blog-application
