@@ -1,13 +1,32 @@
-# Dockerfile
-# gets the docker parent image
-FROM ruby:3.4.4
+# Dockerfile for development
+FROM ruby:3.3.0
 
-RUN apt-get update && apt-get install -y npm && npm install -g yarn
+# Install system dependencies
+RUN apt-get update -qq && \
+    apt-get install -y nodejs npm && \
+    npm install -g yarn
 
-RUN mkdir -p /var/app
-COPY . /var/app
-WORKDIR /var/app
+# Create and set working directory
+WORKDIR /app
 
+# Install Ruby dependencies
+COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
-CMD rails s -b 0.0.0.0
+# Copy the rest of the application code
+COPY . .
+
+# Add a script to wait for database and start the server
+COPY bin/docker-entrypoint /usr/bin/
+RUN chmod +x /usr/bin/docker-entrypoint
+
+# Expose port 3000
+# EXPOSE 3000
+
+# # Start the server
+# ENTRYPOINT ["docker-entrypoint"]
+# CMD ["rails", "server", "-b", "0.0.0.0"]
+
+
+EXPOSE 80
+CMD ["./bin/thrust", "./bin/rails", "server"]
