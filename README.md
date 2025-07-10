@@ -4,7 +4,17 @@
 ## Run
 
 ```bash
+# make sure use ruby 3
+eval "$(rbenv init -)"
 
+source ~/.zshrc 
+
+ruby --version
+
+rails --version
+```
+
+```bash
 ruby test_1.rb
 ```
 
