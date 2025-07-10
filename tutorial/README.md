@@ -3,17 +3,6 @@
 - build docker file
 
 ```bash
-
-docker build -f Dockerfile_dev -t ror-tutorial .
-
-docker run -it -p 80:80 ror-tutorial
-
-docker run -p 80:80 ror-tutorial
-
-
-#------------
-
-
 # 1. Stop any running containers
 docker stop $(docker ps -q)
 
@@ -26,6 +15,11 @@ docker build -f Dockerfile_dev -t ror-tutorial .
 # 4. Run the container with proper port mapping and volume mounting
 docker run -it -p 3000:3000 -v $(pwd):/app ror-tutorial
 
+# tag
+docker tag ror-tutorial yennanliu/ror-tutorial:v1
+
+# push
+docker push yennanliu/ror-tutorial:v1
 ```
 
 ## Run
