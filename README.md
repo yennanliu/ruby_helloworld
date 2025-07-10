@@ -39,3 +39,5 @@ irb
 - Devise
 	- https://ihower.tw/rails/auth.html
 	- https://progressbar.tw/posts/172
+- Dockerize ror app
+	- https://dockerize.io/guides/ruby-on-rails-guide
