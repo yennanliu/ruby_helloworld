@@ -18,6 +18,15 @@ rails --version
 ruby test_1.rb
 ```
 
+- cmd fix ruby format, syntax
+
+```bash
+
+bundle install
+
+bundle exec rubocop -A db/seeds.rb db/seeds_docker.rb
+```
+
 ## Run interactive
 
 ```bash
